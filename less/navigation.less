@@ -1,0 +1,29 @@
+header {
+    nav {
+        .flexCenter();
+        padding: 5% 0 3% 0;
+
+        a {
+            text-decoration: none;
+            .fontStyles();
+            font-size: 1.75rem;
+            padding: 0 1%;
+        }
+        .about {
+            padding: 0 2%;
+            border-left: solid 2px @fontColor;
+            border-right: solid 2px @fontColor;
+        }
+        .home {
+            font-weight: bold;
+        }
+    }
+}
+@media (max-width: 500px)
+{
+    header {
+        nav {
+            padding: 7% 0 5% 0;
+        }
+    }
+}
