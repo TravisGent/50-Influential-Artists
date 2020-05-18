@@ -1,4 +1,196 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+.fontStyles {
+  font-family: 'Raleway', sans-serif;
+  color: #515154;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0 3% 0;
+}
+header nav a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #515154;
+  font-size: 1.75rem;
+  padding: 0 1%;
+}
+header nav .about {
+  padding: 0 2%;
+  border-left: solid 2px #515154;
+  border-right: solid 2px #515154;
+}
+header nav .home {
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding: 7% 0 5% 0;
+  }
+}
+body {
+  width: 90%;
+  margin: 0 auto 30px;
+}
+body .title-container {
+  background-image: url("../assets/home.png");
+  padding: 25% 30%;
+  margin: 0 25px;
+}
+body .title-container h1 {
+  font-size: 3.5rem;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+body .title-container .centeredButton {
+  display: flex;
+  justify-content: center;
+}
+body .title-container .centeredButton button {
+  padding: 10px 50px;
+  border-radius: 6px;
+  font-family: 'Raleway', sans-serif;
+  color: #515154;
+  background-color: white;
+  font-size: 1rem;
+}
+body hr {
+  color: #cfcfcf;
+  margin: 3% 0;
+}
+body .artists-container {
+  display: flex;
+}
+body .artists-container .artist {
+  padding: 2%;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 35px;
+}
+body .artists-container .artist img {
+  overflow: hidden;
+  width: 350px;
+  height: 300px;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+body .artists-container .artist a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #515154;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 4% 0;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  body .title-container {
+    margin: 0;
+  }
+  body .artists-container {
+    flex-direction: column;
+  }
+  body .artists-container .artist {
+    margin: 0 auto;
+  }
+}
